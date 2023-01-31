@@ -4,6 +4,7 @@ import { visionTool } from '@sanity/vision';
 import { schemaTypes } from './schemas';
 
 export default defineConfig({
+  basePath: '/studio',
   name: 'Aikido_Studio',
   title: 'Aikido Studio',
 
