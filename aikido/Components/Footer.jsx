@@ -27,8 +27,7 @@ function Footer() {
                   {navItem}
                 </p>
               ))}
-            </div>
-            ,{' '}
+            </div>{' '}
             <div>
               {nav2.map((navItem, index) => (
                 <p key={index} className='cursor_pointer'>
@@ -45,7 +44,7 @@ function Footer() {
             <button className='secondary-button'>GET STARTED</button>
           </div>
         </div>
-        <div>
+        <div style={{ marginTop: '30px' }}>
           {`©${year} Aikido Finance all rights reserved. This website is operated by
         Life Unlocked Ltd. Aikido Finance is a publisher and a technology
         platform, not a registered broker-dealer or registered investment
