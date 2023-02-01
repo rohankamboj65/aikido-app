@@ -85,7 +85,7 @@ export default function Home() {
         </div>
         <div className='hero_background'></div>
       </section>
-      <div className='investBackground'>
+      <div className='freeNewsletterBackground'>
         <Accordion />
 
         {/* Get essential investing tips */}
@@ -109,18 +109,7 @@ export default function Home() {
               SUBSCRIBE TO OUR NEWSLETTER FOR FREE TODAY
             </p>
           </div>
-          <div
-            className=''
-            // style={{
-            //   // display: 'flex',
-            //   gap: "10px",
-            //   backgroundImage: `url(${curveBlackImage.src})`,
-            //   backgroundRepeat: "no-repeat",
-            //   backgroundSize: "cover",
-            //   width: "100%",
-            //   height: "100vh",
-            // }}
-          >
+          <div>
             <input
               type='email'
               placeholder='Enter your e-mail address'

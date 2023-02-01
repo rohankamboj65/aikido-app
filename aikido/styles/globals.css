@@ -247,7 +247,13 @@ body {
 
 
 .footer {
-  margin: 30px 0
+  margin: 100px 0
+}
+
+@media (max-width: 600px) {
+  .footer {
+    margin: 60px 0
+  }
 }
 
 .footer_section {
@@ -416,7 +422,7 @@ body {
 
 /* invesing tips section */
 
-.investBackground {
+.freeNewsletterBackground {
   background: url('../Images/curveBlackImage.png');
   background-repeat: no-repeat;
   background-size: contain;
