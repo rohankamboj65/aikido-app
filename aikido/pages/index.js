@@ -17,6 +17,24 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
+      <div className='main-container connect_section'>
+        <p style={{ fontSize: '36px', fontWeight: 500, margin: 0 }}>Connect</p>
+        <p
+          style={{
+            textAlign: 'center',
+            fontSize: '18px',
+            fontWeight: 500,
+            margin: 0,
+          }}
+        >
+          Send Shelf and Xplore orders
+          <br />
+          straight to your broker
+        </p>
+        <p style={{ fontSize: '30px', fontWeight: 300, margin: 0 }}>
+          +$10/month
+        </p>
+      </div>
       <Footer />
     </>
   );
