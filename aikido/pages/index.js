@@ -5,51 +5,9 @@ import styles from '@/styles/Home.module.css';
 import Navbar from '@/Components/Navbar';
 import checkIcon from '../Images/checkIcon.svg';
 import Footer from '@/Components/Footer';
-
+import Accordion from '@/Components/Accordion';
+import { price_plans } from '../Utils/Constant';
 export default function Home() {
-  const PricePlans = [
-    {
-      title: 'Taster',
-      tagline: 'Perfect for starting out',
-      price: 'Free forever',
-      benefits: [
-        'Trade with paper portfolios using off the shelf strategies',
-        'Try out Xplore',
-      ],
-      cta: {
-        link: 'https://app.aikido.finance/',
-        title: 'START NOW',
-      },
-    },
-    {
-      title: 'Shelf',
-      tagline: 'Enjoy the ease of trading pre-built trusted strategies',
-      price: '$15/month',
-      benefits: [
-        'Everything in Taster Plan',
-        'Guided Manual Trading',
-        'Online Portfolio Manager',
-        'Automated Crypto Trading',
-      ],
-      cta: {
-        link: 'https://app.aikido.finance/plans',
-        title: 'TRY 1 month Free',
-      },
-    },
-    {
-      title: 'Xplore',
-      tagline: 'Invent, clone and build your own investment strategies',
-      price: '$25/month',
-      benefits: [
-        'Everything in Shelf Plan',
-        'Build your own investment strategies (Stocks & ETF’s)',
-      ],
-      cta: {
-        link: 'https://app.aikido.finance/plans',
-        title: 'TRY 1 month Free',
-      },
-    },
-  ];
   return (
     <>
       <Head>
@@ -72,7 +30,7 @@ export default function Home() {
               Enjoy 1 month free trial. Change or cancel your plan at any time.
             </p>
             <div className='cards_container  text_black'>
-              {PricePlans?.map((item, i) => (
+              {price_plans?.map((item, i) => (
                 <div key={i} className='pricing_card'>
                   <h3 className='heading_4 text_center'>{item.title}</h3>
                   <p
@@ -127,6 +85,51 @@ export default function Home() {
         </div>
         <div className='hero_background'></div>
       </section>
+      <div className='investBackground'>
+        <Accordion />
+
+        {/* Get essential investing tips */}
+        <div
+          className=''
+          style={{
+            width: '100%',
+            textAlign: 'center',
+            // alignItems: "center",
+            // justifyContent: "center",
+            margin: '20px 0',
+            // gap: "10px",
+            color: 'white',
+          }}
+        >
+          <div>
+            <p style={{ fontWeight: 600, fontSize: '50px', margin: 0 }}>
+              GET ESSENTIAL <br /> INVESTING TIPS
+            </p>
+            <p style={{ fontWeight: 400, fontSize: '14px', margin: 0 }}>
+              SUBSCRIBE TO OUR NEWSLETTER FOR FREE TODAY
+            </p>
+          </div>
+          <div
+            className=''
+            // style={{
+            //   // display: 'flex',
+            //   gap: "10px",
+            //   backgroundImage: `url(${curveBlackImage.src})`,
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "cover",
+            //   width: "100%",
+            //   height: "100vh",
+            // }}
+          >
+            <input
+              type='email'
+              placeholder='Enter your e-mail address'
+              style={{ height: '30px' }}
+            />
+            <button className='primary-button'>SIGN UP</button>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );
