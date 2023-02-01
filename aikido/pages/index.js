@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import Navbar from '@/Components/Navbar'
-
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import Navbar from "@/Components/Navbar";
+import checkIcon from "../Images/checkIcon.svg";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -16,8 +15,108 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
-    
+      <Navbar />
+
+      {/* hero-section */}
+
+      <section className="hero_container">
+        <div className="main-container">
+          <div className="text_white padding_top">
+            <h3 className="heading_3 text_center">Simple plans, low monthly prices</h3>
+            <p className="text_center">
+              Enjoy 1 month free trial. Change or cancel your plan at any time.
+            </p>
+            <div className="cards_container  text_black">
+              <div className="pricing_card">
+                <h3 className="heading_4 text_center">Taster</h3>
+                <p className="paragraph_1 text_center">Perfect for starting out</p>
+                <div className="card_text_container text_center">
+                  <h5 className="heading_5">Free forever</h5>
+                  <button className="secondary_outline btn_margin">START NOW</button>
+                </div>
+                <div className="points_container">
+                  <img src={checkIcon.src} alt="checkIcon" />
+                  <p className="paragraph_1">
+                    Trade with paper portfolios using <br/> off the shelf strategies
+                  </p>
+                </div>
+                <div className="points_container">
+                  <img src={checkIcon.src} alt="checkIcon" />
+                  <p className="paragraph_1">
+                  Try out Xplore
+                  </p>
+                </div>
+              </div>
+
+              {/* 2 */}
+              <div className="pricing_card">
+                <h3 className="heading_4 text_center">Taster</h3>
+                <p className="paragraph_1 text_center">Perfect for starting out</p>
+                <div className="card_text_container text_center">
+                  <h5 className="heading_5">Free forever</h5>
+                  <button className="secondary_outline btn_margin">START NOW</button>
+                </div>
+                <div className="points_container">
+                  <img src={checkIcon.src} alt="checkIcon" />
+                  <p className="paragraph_1">
+                    Trade with paper portfolios using <br/> off the shelf strategies
+                  </p>
+                </div>
+                <div className="points_container">
+                  <img src={checkIcon.src} alt="checkIcon" />
+                  <p className="paragraph_1">
+                  Try out Xplore
+                  </p>
+                </div>
+              </div>
+              {/* 3 */}
+              <div className="pricing_card">
+                <h3 className="heading_4 text_center">Taster</h3>
+                <p className="paragraph_1 text_center">Perfect for starting out</p>
+                <div className="card_text_container text_center">
+                  <h5 className="heading_5">Free forever</h5>
+                  <button className="secondary_outline btn_margin">START NOW</button>
+                </div>
+                <div className="points_container">
+                  <img src={checkIcon.src} alt="checkIcon" />
+                  <p className="paragraph_1">
+                    Trade with paper portfolios using <br/> off the shelf strategies
+                  </p>
+                </div>
+                <div className="points_container">
+                  <img src={checkIcon.src} alt="checkIcon" />
+                  <p className="paragraph_1">
+                  Try out Xplore
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className='connect_section'>
+        <p style={{ fontSize: '36px', fontWeight: 500, margin: 0 }}>Connect</p>
+        <p
+          style={{
+            textAlign: 'center',
+            fontSize: '18px',
+            fontWeight: 500,
+            margin: 0,
+          }}
+        >
+          Send Shelf and Xplore orders
+          <br />
+          straight to your broker
+        </p>
+        <p style={{ fontSize: '30px', fontWeight: 300, margin: 0 }}>
+          +$10/month
+        </p>
+      </div>
+          </div>
+        </div>
+        <div className="hero_background">
+     
+        </div>
+      </section>
+      <Footer/>
     </>
-  )
+  );
 }
