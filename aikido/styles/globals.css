@@ -110,6 +110,75 @@ body {
   gap: 0.6rem;
 }
 
+
+
+/* Start Accordion Css */
+
+.text_white {color: white}
+.accordian_container{
+  background-color: black;
+}
+.accordionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff;
+}
+.acc_container {
+  top: 30%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.wrap h3 {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+.wrap span {
+  margin-right: 1.5rem;
+}
+.dropdown {
+  /* background: #fbfbfb; */
+
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.dropdown p {
+  font-size: 1rem;
+}
+
+/* invesing tips section */
+
+.investBackground {
+  background: url('../Images/curveBlackImage.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 300px; */
+  background-position: bottom;
+  /* width: 100%; */
+  padding-bottom: 6rem;
+  /* background-color: black; */
+
+
+}
+/* End Accordion Css */
+
 @media (max-width: 600px) {
   .navbar-container {
     background-color: black;
