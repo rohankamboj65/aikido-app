@@ -116,6 +116,8 @@ body {
 .navbar-container {
   background-color: black;
   padding: 1rem;
+  position: relative;
+  z-index: 5;
   /* width: 100%; */
 }
 
@@ -352,4 +354,8 @@ body {
   }
   
 
+}
+
+.width-full {
+  width: 100%;
 }
