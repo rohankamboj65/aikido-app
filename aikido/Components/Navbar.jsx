@@ -19,20 +19,12 @@ const Navbar = () => {
               <span></span>
             </label>
           </div>
-
           <div className="nav-links">
             <h6 className="navbar-text">Get started now</h6>
             <div className="button-container">
-
-           
-            <button className="outline-button">
-              LOG IN
-            </button>
-            <button className="primary-button">
-              SIGN UP
-            </button>
+              <button className="outline-button">LOG IN</button>
+              <button className="primary-button">SIGN UP</button>
             </div>
-         
           </div>
         </div>
       </div>
