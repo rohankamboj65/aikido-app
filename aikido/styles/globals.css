@@ -13,10 +13,22 @@
   color: black;
   border: 1px solid transparent;
 }
+
+.secondary-button {
+  background-color: black;
+  border-radius: 4px;
+  padding: 0.7rem 1.3rem;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
 .outline-button {
   border: 1px solid white;
   border-radius: 4px;
   padding: 0.7rem 1.3rem;
+  background-color: transparent;
+  color: white;
   background-color: transparent;
   color: white;
 }
@@ -24,16 +36,16 @@
 /* font-family */
 
 @font-face {
-  font-family: "proxima_nova_rgregular";
-  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
-      format("woff"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
-      format("truetype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
-      format("svg");
+  font-family: 'proxima_nova_rgregular';
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff')
+      format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf')
+      format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -53,7 +65,8 @@
 } */
 
 body {
-  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -61,6 +74,8 @@ body {
 
 .navbar-container {
   background-color: black;
+  padding: 1rem;
+  /* width: 100%; */
   padding: 1rem;
   /* width: 100%; */
 }
@@ -110,7 +125,19 @@ body {
   gap: 0.6rem;
 }
 
+.nav > .nav-links .button-container {
+  display: flex;
+  /* padding-left: 1rem; */
+  width: 100%;
+  gap: 0.6rem;
+}
+
 @media (max-width: 600px) {
+  .navbar-container {
+    background-color: black;
+    padding: 1rem 0;
+    /* width: 100%; */
+  }
   .navbar-container {
     background-color: black;
     padding: 1rem 0;
@@ -119,6 +146,7 @@ body {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
+    right: 26px;
     right: 26px;
     top: 0px;
   }
@@ -142,6 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    justify-content: flex-end;
     width: 100%;
     background-color: black;
     height: 0px;
@@ -157,11 +186,21 @@ body {
     gap: 1rem;
     padding-bottom: 3rem;
 
+    padding-left: 1rem;
+  }
+
+  .nav > .nav-links .button-container {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 3rem;
   }
 
   .nav > .nav-links .button-container > button {
     display: block;
     width: 30%;
+    margin-top: 1rem;
+    height: fit-content;
     margin-top: 1rem;
     height: fit-content;
   }
@@ -179,4 +218,48 @@ body {
     font-size: 14px;
     font-weight: normal;
   }
+}
+
+.footer {
+  margin: 30px 0
+}
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .footer_section {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+}
+
+.footer_nav_items {
+display: flex;
+gap: 70px;
+}
+
+.connect_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .connect_section {
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 0
+  }
+}
+
+.cursor_pointer {
+  cursor: pointer;
 }
