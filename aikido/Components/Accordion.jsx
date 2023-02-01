@@ -28,9 +28,9 @@ const Accordion = () => {
                   <h3 className=''>{item.question}</h3>
                   <span>
                     {clicked === index ? (
-                      <img src={plusIcon.src} alt='' />
+                      <img src={plusIcon.src} alt='plusicon' />
                     ) : (
-                      <img src={plusIcon.src} alt='' />
+                      <img src={plusIcon.src} alt='plusicon' />
                     )}
                   </span>
                 </div>
