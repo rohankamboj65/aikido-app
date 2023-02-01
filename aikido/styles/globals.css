@@ -13,6 +13,16 @@
   color: black;
   border: 1px solid transparent;
 }
+
+.secondary-button {
+  background-color: black;
+  border-radius: 4px;
+  padding: 0.7rem 1.3rem;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
 .outline-button {
   border: 1px solid white;
   border-radius: 4px;
@@ -24,16 +34,16 @@
 /* font-family */
 
 @font-face {
-  font-family: "proxima_nova_rgregular";
-  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
-      format("woff"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
-      format("truetype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
-      format("svg");
+  font-family: 'proxima_nova_rgregular';
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff')
+      format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf')
+      format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
